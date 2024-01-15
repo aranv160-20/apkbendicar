@@ -30,13 +30,13 @@ $show_pagination = $this->show_pagination;
         <div class="container-fluid">
             <div class="row ">
                 <div class="col ">
-                    <h4 class="record-title">Tbl User</h4>
+                    <h4 class="record-title">User</h4>
                 </div>
                 <div class="col-sm-3 ">
                     <?php if($can_add){ ?>
                     <a  class="btn btn btn-primary my-1" href="<?php print_link("tbl_user/add") ?>">
                         <i class="fa fa-plus"></i>                              
-                        Add New Tbl User 
+                        Add New User 
                     </a>
                     <?php } ?>
                 </div>
@@ -173,7 +173,7 @@ $show_pagination = $this->show_pagination;
                                                     </td>
                                                     <td class="td-level"> <?php echo $data['level']; ?></td>
                                                     <td class="td-email"><a href="<?php print_link("mailto:$data[email]") ?>"><?php echo $data['email']; ?></a></td>
-                                                    <td class="td-foto"><?php Html :: page_img($data['foto'],400,400,1); ?></td>
+                                                    <td class="td-foto"><?php Html :: page_img($data['foto'],100,100,1); ?></td>
                                                     <td class="td-nama">
                                                         <span <?php if($can_edit){ ?> data-value="<?php echo $data['nama']; ?>" 
                                                             data-pk="<?php echo $data['id_user'] ?>" 

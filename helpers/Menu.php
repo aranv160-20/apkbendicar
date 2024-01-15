@@ -53,7 +53,7 @@ class Menu{
 		
 		array(
 			'path' => 'tbl_user', 
-			'label' => 'Tbl User', 
+			'label' => 'User', 
 			'icon' => '<i class="fa fa-users "></i>'
 		)
 	);
